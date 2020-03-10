@@ -1,5 +1,13 @@
 # slackscrape
 
+## WARNING
+
+Slack is deprecating the API tokens that this project uses, you will not be able to issue them after May 2020. 
+This project is dependent on version 1.x of the python "slackclient" API
+You'll want to install the  latest 1.x - 
+`pip3 install -Iv slackclient==1.2.1`
+
+
 ## Usage
 
 Add your [slack token](https://api.slack.com/docs/oauth-test-tokens) credentials to `env.json` in project root
@@ -11,6 +19,9 @@ eg:
   "token": "xxxxxx-XXXXXXXX-XXXXXXXX-xxxxxxxx"
 }
 ```
+
+Additionally your "channel id" and "output" location (full  path to Json output file) need to be specified in the env.json
+
 
 ## slackscrape
 
